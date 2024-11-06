@@ -1,1 +1,1 @@
-Guys one person will create all the main files, everyone else will push there code in their branches, one person will test the branch code and push it to main code, dont't forget to update your README files everytime 
+README.md
