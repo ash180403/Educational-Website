@@ -6,7 +6,7 @@
 
 /* Navbar Container */
 .navbar {
-  background-color: #143eba;
+  background-color: #4A628A;
   padding: 20px 0;
   color: rgb(1, 0, 7);
   height: 100px;
@@ -15,8 +15,8 @@
 /* Inner Container to align logo, text, and links */
 .container {
   display: flex;
-  align-items: center;  /* Vertically align the items in the center */
-  justify-content: space-between;  /* Distribute space between logo/text and links */
+  align-items: center; 
+  justify-content: space-between;  
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -25,9 +25,9 @@
 
 /* Logo Styling */
 .logo img {
-  width: 50px;  /* Adjust the size of the logo */
+  width: 50px;  
   height: auto;
-  margin-right: 10px;  /* Space between logo and "EduConnect" text */
+  margin-right: 10px;  
 }
 
 /* EduConnect Title */
@@ -35,7 +35,7 @@ h1 {
   font-size: 28px;
   font-weight: bold;
   margin: 0;
-  flex-grow: 1; /* Ensures the title takes up remaining space */
+  flex-grow: 1; 
 }
 
 /* Navbar Links */
@@ -58,7 +58,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #ff4081;  /* Add hover effect */
+  color: #ff4081;  
 }
 
 
@@ -81,9 +81,8 @@ ul li a:hover {
 
 .hero-text {
   flex: 1;
-  /* text-align: center; */
   position: relative;
-  z-index: 1; /* Ensures text is above the background */
+  z-index: 1; 
 }
 
 /* Add a background to text for better visibility */
@@ -91,11 +90,11 @@ ul li a:hover {
   font-size: 58px;
   font-weight: bold;
   color: #d5cf1e;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);  /* Text shadow to enhance visibility */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); 
 }
 
 .hero-text p {
-  border: 0px solid #cfde25;  /* Yellow border around the text */
+  border: 0px solid #cfde25;  
   border-radius: 8px;
   margin-right: 40px;
   margin-top: 10px;
@@ -103,7 +102,7 @@ ul li a:hover {
   background-color: black;
   font-size: 22px;
   color: #cfde25;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  /* Text shadow to enhance visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
 }
 
 .hero-text .btn {
@@ -124,42 +123,39 @@ ul li a:hover {
 
 /* Feature Section */
 .feature-section {
-  background:scroll;
-  background-color: #91d9f6;
+  background-color: #B9E5E8;
   padding: 50px 0;
+}
+
+/* Feature Heading */
+.feature-heading {
+  margin-bottom: 40px; 
   text-align: center;
 }
 
-/* Text Box for 'Features' above feature boxes */
-.feature-text-box {
-  background-color: #f9f9f9;
-  border: 2px solid #1c4a98;  /* Blue border around the text box */
-  padding: 15px 30px;
-  border-radius: 10px;
-  margin-bottom: 30px; /* Space between text box and feature boxes */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for the text box */
-  display: inline-block; /* Keep the box size limited to the text */
-}
-
-.section-title {
-  background-color: rgb(219, 106, 106);
-  border: 0px solid #1c4a98;
-  border-radius: 8px;
-  padding: 15px;
+/* Red Box Styling for the heading */
+.red-box {
+  display: inline-block;
+  background-color: #fb6b6b;  
+  color: white;
   font-size: 36px;
   font-weight: bold;
-  margin: 0;
+  padding: 10px 20px;  
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Feature Row */
 .feature-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
   text-align: center;
+  margin-top: 20px; 
 }
 
+/* Individual Feature Boxes */
 .feature {
   background-color: #f9f9f9;
   padding: 25px;
@@ -203,6 +199,7 @@ ul li a:hover {
   color: #fb4581;
 }
 
+
 /* Applied Styling for the Typed.js Effect */
 .auto-type {
   display: inline-block;
@@ -213,19 +210,18 @@ ul li a:hover {
 }
 
 
-
 /* Footer Section */
 .footer {
-  background-color: #1c4a98;  /* Blue background */
-  color: #f1f1f1;  /* White text color */
-  padding: 40px 0;
+  background-color: #7AB2D3; 
+  color: #f1f1f1;  
+  padding: 60px 0;  
 }
 
 /* Footer Container */
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;  /* Align items to the top */
+  align-items: flex-start;  
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -235,14 +231,14 @@ ul li a:hover {
 .footer-logo {
   display: flex;
   flex-direction: column;
-  align-items: center;  /* Center logo and text vertically */
+  align-items: center;  
   justify-content: center;
 }
 
 .footer-logo img {
-  width: 50px;  /* Adjust logo size */
+  width: 50px; 
   height: auto;
-  margin-top: 20px;  /* Increased space between logo and text */
+  margin-top: 30px;  
 }
 
 .footer-logo h2 {
@@ -259,22 +255,22 @@ ul li a:hover {
 }
 
 .footer-links li {
-  margin-top: 20px;
+  margin-top: 25px;  
   display: flex;
   justify-content: space-between;
 }
 
 .footer-links li a {
-  color: white;  /* White link color */
+  color: white;  
   text-decoration: none;
   font-size: 16px;
 }
 
 .footer-links li a:hover {
-  color: #ff4081;  /* Hover effect for links */
+  color: #ff4081; 
 }
 
-/* Social Media Section */
+
 .footer-social {
   display: flex;
   flex-direction: column;
@@ -283,24 +279,24 @@ ul li a:hover {
 
 .footer-social h3 {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;  
 }
 
 .social-icons a {
-  color: #fff;  /* White icon color */
+  color: #fff;  
   font-size: 20px;
-  margin: 0 10px;
+  margin: 0 15px;  
 }
 
 .social-icons a:hover {
-  color: #ff4081;  /* Hover effect for social icons */
+  color: #ff4081; 
 }
 
 /* Footer Bottom */
 .footer-bottom {
   text-align: center;
-  background-color: #041e7c;  /* Dark background for bottom section */
-  padding: 10px 0;
+  background-color: #4A628A;  
+  padding: 20px 0;  
 }
 
 .footer-bottom p {
