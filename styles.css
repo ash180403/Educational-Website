@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+
+body {
+    color: #ffffff;
+    background-color: #011849;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #011849;
+    color: white;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* Adjust logo size */
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-right {
+    list-style-type: none;
+    display: flex;
+    gap: 2.5em;
+}
+
+.navbar-right li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar-right li a:hover {
+    color:rgb(200, 200, 200);
+    font-size: 1.2rem;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('bg1.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: l;
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin-left: 5%; /* Move slightly towards the center */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Add space between buttons */
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section:nth-child(odd) {
+    background-color: #01295f; /* Slightly darker blue */
+}
+
+section:nth-child(even) {
+    background-color: #01366f; /* Slightly lighter blue */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #ff5722;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* About Us Section */
+.about-section {
+    background-color: #01295f;
+    padding: 4rem 0;
+    color: #e0f7fa;
+    text-align: center;
+}
+
+/* Wrapper for Center Alignment and Padding */
+.about-us-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: .5rem;
+    background-color: #01295f;
+    border-radius: 10px;
+    
+    text-align: left;
+}
+
+/* Heading Styles */
+.about-us-wrapper h2 {
+    font-size: 2.2rem;
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+.about-us-wrapper p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Optional Line Break Styling for Readability */
+.about-us-wrapper p br {
+    margin-top: 1em;
+    display: block;
+    content: "";
+}
