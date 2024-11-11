@@ -222,7 +222,7 @@ p {
 
 .grid-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .grid-image {
@@ -247,3 +247,163 @@ p {
 .know-more-btn:hover {
     background-color: #654136;
 }
+
+/* Mentorship Section */
+.mentors-section {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.mentors-section h3 {
+    font-size: 1.8rem;
+    color: #ff5722;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.mentor-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.mentor-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.mentor-card:hover {
+    transform: translateY(-5px);
+}
+
+.mentor-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.mentor-card h4 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 0.5rem 0;
+}
+
+/* Container for role and button */
+.mentor-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+/* Role text */
+.mentor-card p {
+    font-size: 0.9rem;
+    color: #000000;
+    margin: 0;
+}
+
+/* Book Session button styling */
+.book-session-btn {
+    padding: 0.4rem 0.8rem;
+    background-color: #966656;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-session-btn:hover {
+    background-color: #654136;
+}
+
+.footer {
+    background-color: #966656;
+    color: #ffffff;
+    padding-top: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h4 {
+    color: #000000;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-section p, .footer-section a {
+    color: #d1d1e0;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+}
+
+.footer-section a:hover {
+    color: #ff5722;
+}
+
+/* Quick Links and Social Icons in Horizontal Layout */
+.links-socials {
+    text-align: center;
+}
+
+.quick-links ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.quick-links ul li a {
+    color:#000000;  /* #d1d1e0; */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.quick-links ul li a:hover {
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #000000;
+}
+
+.footer-bottom p{
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #d1d1e0;
+    font-size: 0.8rem;
+    color: #000000;
+    margin-top: 1rem;
+}
+
+
