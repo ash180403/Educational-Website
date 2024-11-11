@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +8,7 @@
 }
 
 body {
-    color: #ffffff;
-    background-color: #011849;
+    color: #000000;
 }
 
 /* Navbar Styles */
@@ -17,8 +17,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-    background-color: #011849;
-    color: white;
+    position: absolute; /* Make navbar float over the hero section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent; /* Transparent background */
+    color: white; 
+    z-index: 10; /* Ensure navbar stays above hero section content */
 }
 
 .navbar-left {
@@ -27,12 +32,16 @@ body {
 }
 
 .logo {
-    height: 40px; /* Adjust logo size */
+    height: 50px;
+    width: 50px; 
     margin-right: 10px;
+    border-radius: 50%; 
+    object-fit: cover; 
 }
 
+
 .name {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -47,22 +56,22 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
+    transition: font-size 0.2s ease;
 }
 
 .navbar-right li a:hover {
-    color:rgb(200, 200, 200);
     font-size: 1.2rem;
 }
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('bg1.jpg'); /* Replace with your background image */
+    background-image: url('Assets/bg4.png'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: l;
+    justify-content: left;
     color: white;
     position: relative;
     text-align: left;
@@ -75,14 +84,15 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    z-index: 0;
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
     max-width: 600px;
-    margin-left: 5%; /* Move slightly towards the center */
+    margin-left: 5%; /* Adjust positioning */
 }
 
 .hero h1 {
@@ -93,85 +103,147 @@ body {
 .hero p {
     font-size: 1.2em;
     margin-bottom: 1em;
+    color: whitesmoke;
 }
 
 .btn {
     padding: 10px 20px;
-    background-color: #ff5722;
+    background-color: #966656;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    margin-right: 10px; /* Add space between buttons */
+    margin-right: 10px;
 }
 
 .btn:hover {
-    background-color: #e64a19;
+    background-color: #654136;;
 }
 
-/* Section Styles */
+/* General Section Styles */
 section {
     padding: 2rem;
     text-align: center;
 }
 
 section:nth-child(odd) {
-    background-color: #01295f; /* Slightly darker blue */
+    background-color: whitesmoke  /*#f9e8e8;  */
 }
 
 section:nth-child(even) {
-    background-color: #01366f; /* Slightly lighter blue */
+    background-color: white   /* #f9e2e2; */
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    color: #ff5722;
+    color: #0c0228;
 }
 
 p {
     font-size: 1.1rem;
-    color: #ffffff;
+    color: #000000;
     text-align: left;
 }
 
-/* About Us Section */
+/*aboust us section */
+
 .about-section {
-    background-color: #01295f;
-    padding: 4rem 0;
-    color: #e0f7fa;
-    text-align: center;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9e8e8; /* Light background color */
 }
 
-/* Wrapper for Center Alignment and Padding */
-.wrap {
+.about-content {
+    display: flex;
     max-width: 1100px;
-    margin: 0 auto;
-    padding: .5rem;
-    background-color: #01295f;
-    border-radius: 10px;
-    
-    text-align: left;
+    gap: 2rem;
+    align-items: center;
 }
 
-/* Heading Styles */
-.wrap h2 {
-    font-size: 2.2rem;
-    color: #ffcc00;
-    margin-bottom: 0.5rem;
-    text-align: center;
+.about-image img {
+    width: 100%;
+    max-width: 400px; /* Control image size */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Paragraph Styling */
-.wrap p {
-    font-size: 1.1rem;
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    color: #011849;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1rem;
     line-height: 1.6;
+    color: #333;
 }
 
-/* Optional Line Break Styling for Readability */
-.wrap p br {
-    margin-top: 1em;
-    display: block;
-    content: "";
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #966656;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #654136;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 0.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.grid-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 0.2em;
+}
+
+.know-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    color: #ffffff;
+    background-color:  #966656; /* #ff5722; */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.know-more-btn:hover {
+    background-color: #654136;
 }
