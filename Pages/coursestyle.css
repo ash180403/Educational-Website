@@ -1,0 +1,565 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'lato', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* Navbar Container */
+.navbar {
+  background-color: #966656;
+  padding: 20px 0;
+  color: rgb(13, 13, 13);
+  height: 90px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-1 {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: black;
+  width: 100%;
+}
+
+/* Logo and EduConnect Styling */
+.nav-logo {
+  display: flex;
+}
+
+.nav-logo img {
+  width: 40px;  
+  height: auto;
+  margin-right: 10px;  
+  border-radius: 80px;
+  object-fit: cover;
+}
+
+.nav-logo a {
+  font-size: 28px;
+  margin-left: -100px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;  /* Adjust width for centering */
+  border: 0 solid transparent;
+  border-radius: 80px;
+  margin: 0 auto;  /* Center the search bar within the navbar */
+}
+
+.search-input:hover {
+  border: 2px solid gold;
+}
+/* hero  */
+.hero {
+  background: linear-gradient(#bf8a79, rgba(161, 163, 166, 0.5));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  animation: heroFadeIn 1.5s ease-in-out;
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn-cta {
+  margin-top: 30px;
+  padding: 15px 35px;
+  background-color: #f39c12;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+}
+
+.btn-cta:hover {
+  background-color: #e67e22;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
+.search-input {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  outline: none;
+}
+
+.search-icon {
+ margin-right: 350px;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  font-size: 1.3rem;
+  color: #6c757d;
+}
+
+/* List Heading */
+.list-heading {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #966656;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Course Categories Section */
+.course-categories {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.category-heading {
+  font-size: 1.8rem;
+  color: #966656;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.course-category {
+  padding: 20px;
+  background: linear-gradient(135deg, #99614d, #646459);
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #74b816, #82c91e);
+}
+
+.category-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.course-category h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Courses Cards Section */
+.courses {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+  background-color: #f7f8fa; /* Soft background color */
+  border-radius: 15px;
+}
+
+/* Card Styling */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  border-radius: 15px; /* Softer card corners */
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+  max-width: 330px;
+  background-color: #fff; /* White background */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Subtle lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deep shadow on hover */
+}
+
+.card-img-top {
+  height: 200px; /* Increased height for a more visual impact */
+  object-fit: cover;
+  border-bottom: 5px solid #966656; /* Adds a bottom border to image */
+}
+
+.card-title {
+  color: #2c3e50; /* Darker text color */
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.card-text {
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Card Body Styling */
+.card-body {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 240, 240, 0.85));
+  padding: 20px;
+}
+
+/* Custom styles for carousel */
+.carousel .carousel-item {
+  padding: 30px;
+}
+
+.carousel .card {
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.carousel .card:hover {
+  transform: scale(1.08); /* Slight hover effect */
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6); /* Darker for better visibility */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #966656; /* Change color on hover */
+}
+
+/* Smooth transition for slides */
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Button Styling */
+.card .btn-primary {
+  background-color: #966656; /* Bright blue */
+  border: none;
+  padding: 10px 25px;
+  font-size: 14px;
+  border-radius: 25px; /* Pill-shaped button */
+  transition: background-color 0.3s ease;
+}
+
+.card .btn-primary:hover {
+  background-color: #1abc9c; /* Bright green on hover */
+}
+
+/* Section Heading */
+h4.text-center {
+  font-size: 28px;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #966656;
+  padding-bottom: 20px;
+  width: 50%;
+  margin-left: 350px;
+
+}
+
+
+/* Container for the progress bar */
+.progress-container {
+  width: 35%;
+  margin-left: 150px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* The actual progress bar */
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  width: 25%; /* Set the default width to represent the progress */
+  text-align: center;
+  line-height: 15px; /* Center text vertically */
+  color: white;
+  font-weight: bold;
+  transition: width 0.3s ease; /* Smooth width transition when updated */
+}
+
+
+
+/* Wrapper for Sidebar and Toggle Button */
+.toggle-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 2000; /* Ensure it stays on top */
+}
+
+.toggle-section {
+  width: 40px;
+  height: 100vh;
+  display: flex;
+   justify-content:center;  
+  align-items:flex-start;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.sidebar-toggle {
+  background-color: transparent;
+  border: none;
+  color: #505151;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #966656;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden */
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0; /* Slide in from the left when "open" class is added */
+}
+
+.sidebar-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #912f0e;
+  color: #ecf0f1;
+  position: relative; 
+ 
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+.sidebar-header a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Close Button in Sidebar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #ecf0f1;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Sidebar Menu Styles */
+.sidebar-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-grow: 1;
+}
+
+.sidebar-menu .menu-item {
+  margin: 0;
+}
+
+.sidebar-menu .menu-item a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #bdc3c7;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-menu .menu-item a i {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.sidebar-menu .menu-item:hover a,
+.sidebar-menu .menu-item.active a {
+  background-color: #2980b9;
+  color: white;
+}
+
+.sidebar-menu .menu-item:hover a i,
+.sidebar-menu .menu-item.active a i {
+  color: white;
+}
+
+/* Hide toggle section when sidebar is open */
+.sidebar.open + .toggle-wrapper {
+  display: none;
+}
+.sidebar-header img {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 60px;
+  }
+
+  .sidebar-header {
+      padding: 15px;
+  }
+
+  .sidebar-header h2 {
+      font-size: 18px;
+  }
+
+  .sidebar-menu .menu-item a {
+      justify-content: center;
+  }
+
+  .sidebar-menu .menu-item a span {
+      display: none;
+  }
+
+  .sidebar-menu .menu-item a i {
+      font-size: 22px;
+  }
+}
+/* Footer styling */
+.footer {
+  margin-top: 150px;
+  background-color: #966656;
+  color: #ffffff;
+  padding-top: 2rem;
+  font-family: Arial, sans-serif;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-section h4 {
+  color: #000000;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.footer-section p, .footer-section a {
+  color: #d1d1e0;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+.footer-section a:hover {
+  color: #ff5722;
+}
+/* Quick Links and Social Icons in Horizontal Layout */
+.links-socials {
+  text-align: center;
+}
+.quick-links ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.quick-links ul li a {
+  color:#000000;  /* #d1d1e0; */
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.quick-links ul li a:hover {
+  color: #ffffff;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.social-icons a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #000000;
+}
+.footer-bottom p{
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #d1d1e0;
+  font-size: 0.8rem;
+  color: #000000;
+  margin-top: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}

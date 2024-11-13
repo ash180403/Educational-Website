@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Detail</title>
+    <link rel="stylesheet" href="studyroom.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-image">
+            <img src="assets/math.jpg" alt="Group Image">
+        </div>
+        <div class="header-intro">
+            <h1>Group 1</h1>
+            <p>Welcome to Group 1. Here, members collaborate and share resources.</p>
+            <h1><a href="https://discord.com/your-invite-link" target="_blank">
+                <button id="discord-btn">Go to Discord</button>
+            </a></h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Members List Section -->
+        <div class="members-box">
+            <h3>Members</h3>
+            <ul class="member-list">
+                <li>
+                    <img src="assets/user.png" alt="Profile 1" class="profile-pic"> Member 1
+                </li>
+                <li>
+                    <img src="assets/user.png" alt="Profile 2" class="profile-pic"> Member 2
+                </li>
+                <li>
+                    <img src="assets/user.png" alt="Profile 3" class="profile-pic"> Member 3
+                </li>
+                <li>
+                    <img src="assets/user.png" alt="Profile 4" class="profile-pic"> Member 4
+                </li>
+                <li>
+                    <img src="assets/user.png" alt="Profile 5" class="profile-pic"> Member 5
+                </li>
+                <li>
+                    <img src="assets/user.png" alt="Profile 6" class="profile-pic"> Member 6
+                </li>
+                <li>
+                    <img src="assets/user.png" alt="Profile 7" class="profile-pic"> Member 7
+                </li>
+                <li>
+                    <img src="assets/user.png" alt="Profile 8" class="profile-pic"> Member 8
+                </li>
+                <!-- Add more members as needed -->
+            </ul>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Chat</h2>
+            </div>
+            <div class="chat-box" id="chat-box">
+                <!-- Chat messages will be dynamically added here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type your message">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="extra-section">
+        <div class="folder-box">
+            <h3>Folder</h3>
+            <div class="folder-upload" onclick="document.getElementById('file-upload').click()">
+                <button>+</button>
+                <input type="file" id="file-upload" multiple>
+            </div>
+        </div>
+        <div class="file-storage-box">
+            <h3>Uploaded Files</h3>
+            <div id="file-list">
+                <p>No files uploaded yet.</p>
+            </div>
+        </div>
+    </div>
+<script src="studyroom.js"></script>
+</body>
+</html>

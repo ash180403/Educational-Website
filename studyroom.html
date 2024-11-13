@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Page</title>
+    <link rel="stylesheet" href="studyroom.css">
+    <script src="studyroom.js" defer></script>
+</head>
+<body>
+    <div class="header1">
+        <nav class="navbar">
+            <!-- Left Side: Logo and Name -->
+            <div class="navbar-left">
+                <img src="assets/logo1.jpg" alt="EduConnect Logo" class="logo"> 
+                <span class="name">EduConnect</span>
+            </div>
+    
+            <!-- Right Side: Navigation Links -->
+            <ul class="navbar-right">
+                <li><a href="#what-we-offer">What We Offer</a></li>
+                <li><a href="#mentorship">Mentorship</a></li>
+                <li><a href="#community-hub">Community Hub</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+        
+        
+        <h1>Dive In, </h1>
+        <h1>Discover, </h1>
+        <h1>and Build Your Dream Team!</h1>
+    </div>
+
+
+    
+
+    <div class="main-content">
+        <div class="grid-container">
+            <!-- Example Group Boxes -->
+            <div class="group-box" onclick="window.location.href='group-detail.html'">
+                <img src="assets/math.jpg" alt="Group 1">
+                <div class="overlay">
+                    <p class="group-name">Group 1</p>
+                    <p class="participants">5 Participants</p>
+                </div>
+            </div>
+            <div class="group-box" onclick="window.location.href='group-detail.html'">
+                <img src="assets/apty.jpg" alt="Group 2">
+                <div class="overlay">
+                    <p class="group-name">Group 2</p>
+                    <p class="participants">8 Participants</p>
+                </div>
+            </div>
+            <div class="group-box" onclick="window.location.href='group-detail.html'">
+                <img src="assets/code.jpg" alt="Group 3">
+                <div class="overlay">
+                    <p class="group-name">Group 3</p>
+                    <p class="participants">4 Participants</p>
+                </div>
+            </div>
+            <div class="group-box" onclick="window.location.href='group-detail.html'">
+                <img src="assets/business.png" alt="Group 4">
+                <div class="overlay">
+                    <p class="group-name">Group 4</p>
+                    <p class="participants">7 Participants</p>
+                </div>
+            </div>
+            <div class="group-box" onclick="window.location.href='group-detail.html'">
+                <img src="assets/com.jpg" alt="Group 5">
+                <div class="overlay">
+                    <p class="group-name">Group 5</p>
+                    <p class="participants">5 Participants</p>
+                </div>
+            </div>
+            <div class="group-box" onclick="window.location.href='group-detail.html'">
+                <img src="assets/web.png" alt="Group 6">
+                <div class="overlay">
+                    <p class="group-name">Group 6</p>
+                    <p class="participants">8 Participants</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="add-group" onclick="openModal()">
+            <img src="assets/plus.png" alt="Add Group">
+        </div>
+        
+        <!-- Form Modal -->
+        <div id="formModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="form-container">
+              <h1>Add New Group</h1>
+              <form id="add-group-form">
+                  <label for="group-name">Group Name</label>
+                  <input type="text" id="group-name" name="group-name" required>
+        
+                  <label for="group-members">Members (comma separated)</label>
+                  <input type="text" id="group-members" name="group-members" required>
+        
+                  <label for="description">Group Description</label>
+                  <textarea id="description" name="description" required></textarea>
+        
+                  <button type="submit">Add Group</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduConnect. |  All Rights Reserved</p>
+        </div>
+    
+    
+<script src="studyroom.js"></script>
+</body>
+</html>

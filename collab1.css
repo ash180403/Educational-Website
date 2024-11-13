@@ -1,0 +1,446 @@
+Basic Reset
+body {
+    color: #000000;
+}
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent; 
+    color: rgb(56, 33, 4); 
+    z-index: 10; 
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px; 
+    margin-right: 10px;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-right {
+    list-style-type: none;
+    display: flex;
+    gap: 2.5em;
+}
+
+.navbar-right li a {
+    color: rgb(50, 31, 5);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: font-size 0.2s ease;
+}
+
+.navbar-right li a:hover {
+    font-size: 1.2rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color:#461a0c;
+    margin: 0;
+    padding: 0px;
+}
+
+.section-header {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center; 
+    color: #493012;
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    position: relative; 
+  }
+
+/* Main Content Section */
+.main-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 50px 20px; 
+}
+
+.text-content {
+    width: 50%; 
+}
+
+.text-content h1 {
+    font-size: 2.5em; 
+    margin-bottom: 20px; 
+}
+
+.text-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px; 
+    color: #5a4214;
+}
+
+.cta-button {
+    background-color:  #966656;   
+    /* background-color: #773d2a;  */
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.cta-button:hover {
+    background-color:  #654136; 
+}
+
+
+/* Image Placeholder */
+.image-placeholder {
+    width: 900px;
+    height: 500px; 
+    background-color: #f0f0f0;
+    border: 1px dashed #ccc; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color: #eba078;
+    font-size: 1.5em; 
+    overflow: hidden; 
+}
+
+.main-image {
+    width: 100%; 
+    height: auto; 
+    max-height: 100%; 
+    object-fit: cover; 
+}
+
+/* Search Bar Styling */
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #fff; 
+    border-radius: 5px; 
+    padding: 8px 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    width: 350px; 
+    margin-top: 50px;
+}
+
+.search-bar input {
+    flex: 1; 
+    border: none;
+    outline: none; 
+    padding: 10px; 
+    font-size: 16px;
+    border-radius: 5px; 
+    margin-right: 10px; 
+}
+
+.search-bar input::placeholder {
+    color: #888; 
+}
+
+.search-bar button {
+    background-color:  #966656; 
+    color: rgb(228, 217, 217); 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #654136; 
+}
+
+.search-bar button i {
+    font-size: 18px; /* Icon size */
+}
+/* Project Section */
+.projects-section {
+    margin-top: 80px; 
+    padding: 40px; 
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Section Header */
+.section-header {
+    font-size: 2em;
+    margin-bottom: 40px; 
+    position: center;
+}
+
+/* Container for all project boxes */
+.projects-container {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling for each project box */
+.project-box {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(76, 19, 10, 0.1); 
+    text-align: left; 
+    position: relative; 
+    background-color: #f0faff;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%; 
+}
+
+/* Project Title  */
+.project-title {
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+    text-align: center; 
+    font-weight: bold; 
+    color: #2e1005; 
+}
+
+/*  project description  */
+.project-description {
+    font-size: 1em; 
+    margin-bottom: 10px; 
+    background-color: #e6f7ff;
+    padding: 10px; 
+    border-radius: 5px; 
+    color: #4e1d08; 
+    display: inline-block; 
+}
+
+/* Skills and Team Lead Name  */
+.project-details {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 15px; 
+}
+
+/* Styling for Skills and Team Lead Name */
+.project-details .skills,
+.project-details .team-lead {
+    font-size: 0.9em;
+    color: #666; 
+}
+
+/* Join Button */
+button.join-button {
+    background-color: #401a09; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    align-self: center;
+    margin-top: 20px; 
+}
+
+/* Hover effect for the join button */
+button.join-button:hover {
+    background-color:  #50260c; 
+}
+
+/* Responsive design */
+@media screen and (max-width: 900px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects-container {
+        grid-template-columns: 1fr; 
+    }
+}
+/* projects */
+
+header {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .task-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .scrollable {
+    max-height: 500px; 
+    overflow-y: auto;  
+    padding-right: 10px; 
+  }
+  
+  .column {
+    width: 25%;
+  }
+  
+  .column h2 {
+    text-align: center;
+    color: rgb(96, 45, 13);
+    margin-bottom: 10px;
+  }
+  
+  .task-card {
+    background-color:#dd9d75;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  .task-card p {
+    margin-bottom: 10px;
+    color: #3c1605;
+  }
+  
+  .join-button {
+    background-color: #95421c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .join-button:hover {
+    background-color:#280f03;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: #888;
+  }
+  
+  .icons span {
+    font-size: 1.1em;
+  }
+  
+ 
+  /* footer */
+  .footer {
+    background-color:#d29360;
+    color: #ffffff;
+    padding-top: 2rem;
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h4 {
+    color: #000000;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-section p, .footer-section a {
+    color: #0a0a0d;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+}
+
+.footer-section a:hover {
+    color: #313234;
+}
+
+/* Quick Links and Social Icons in Horizontal Layout */
+.links-socials {
+    text-align: center;
+}
+
+.quick-links ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0rem;
+}
+
+.quick-links ul li a {
+    color:#000000;  /* #d1d1e0; */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.quick-links ul li a:hover {
+    color: #633a22;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.social-icons a {
+    color: #663918;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #000000;
+}
+
+.footer-bottom p{
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #d1d1e0;
+    font-size: 0.8rem;
+    color: #000000;
+    margin-top: 1rem;
+    background-color: #d29360;
+}
